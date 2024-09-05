@@ -1,0 +1,7 @@
+# NAME: chatgpt
+# UPDATED: 2024-09-03 16:14:52
+
+HOST,chatgpt.com,chatgpt
+HOST,openai.com,chatgpt
+HOST-SUFFIX,chatgpt.com,chatgpt
+HOST-SUFFIX,openai.com,chatgpt
