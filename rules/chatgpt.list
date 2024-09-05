@@ -1,6 +1,6 @@
 # NAME: chatgpt
 # UPDATED: 2024-09-03 16:14:52
-
+#自己写的，无处查找更新。
 HOST,chatgpt.com,chatgpt
 HOST,openai.com,chatgpt
 HOST-SUFFIX,chatgpt.com,chatgpt
