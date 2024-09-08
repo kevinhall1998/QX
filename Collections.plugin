@@ -1,0 +1,49 @@
+#!name = App解锁合集
+# 搬运自用，原创chxm1023
+#!desc = 合集App下载地址：
+#!openUrl = https://github.com/chxm1023/Script_X
+
+#************************************#
+# 百度网盘，一刻相册 解锁部分功能
+# hostname = pan.baidu.com
+http-response ^https?:\/\/pan\.baidu\.com\/(youai\/(user\/.+\/getminfo|membership\/.+\/adswitch)|(rest\/.+\/membership\/user|act\/.+\/(bchannel|welfare)\/list|api\/usercfg)) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdcloud.js, requires-body=true, tag=百度网盘
+
+#************************************#
+# 阿里云盘 净化/解锁SVIP
+# hostname = *.aliyundrive.com, *.alipan.com
+http-response ^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js, requires-body=true, tag=阿里网盘
+
+#************************************#
+# Xmind-思维导图
+# hostname = *xmind.*
+http-response ^https?:\/\/(?:www\.)?xmind\..*\/.+\/(devices|token\/.+) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Xmind.js, requires-body=true, tag=Xmind
+
+#************************************#
+# Notability
+# hostname = notability.com
+http-response ^https?:\/\/notability\.com\/(global|subscriptions) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/notability.js, requires-body=true, tag=Notability
+
+#************************************#
+# 考途大学搜题
+# hostname = api-service.tutusouti.com 
+http-response ^https:\/\/api-service\.tutusouti\.com\/appServiceApi\/(vip\/newUserPayVipData|video\/videoDetail) script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/kaotu.js, requires-body=true, tag=考途大学搜题
+
+#************************************#
+# Anki记忆卡
+# hostname = api.ankichinas.com
+http-response ^https:\/\/api\.ankichinas\.com\/api\/.+\/users\/vipInfo script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Anki.js, requires-body=true, tag=Anki
+
+#************************************#
+# Noted录音笔记软件
+# hostname = subscription-api.notedapp.io
+http-response ^https:\/\/subscription-api\.notedapp\.io\/api\/verifyReceipt script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Noted.js, requires-body=true, tag=Noted
+
+#************************************#
+# 幕布
+# hostname = api2.mubu.com
+http-response ^https?:\/\/api2\.mubu\.com\/v3\/api\/user\/current_user script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/mubu.js, requires-body=true, tag=幕布
+
+# 题库大全-好几百个APP
+# hostname = iosapi.yueshuian.com, question.tiku.cqxcj.top, base.cmoe.top, yyapi.yayingtk.com, learn.cqrry.com, api.sryx.net, api.meigit.com, question.api.anjiazui.com, app.bftk.com.cn, question.civil.shaoeyy.com
+http-response ^https?:\/\/(iosapi\.yueshuian|question\.tiku\.cqxcj|base\.cmoe|yyapi\.yayingtk|learn\.cqrry|api\.sryx|api\.meigit|question\.api\.anjiazui|app\.bftk|question\.civil\.shaoeyy)\.(com|top|net).+(common|front\/customer|vip\/getValidTime) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/tiku.js, requires-body=true, tag=题库大全
+
